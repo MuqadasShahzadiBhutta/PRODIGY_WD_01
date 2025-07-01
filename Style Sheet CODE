@@ -1,0 +1,733 @@
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/*global styling added the word normal takay baki buttons ko same style na ho jaye*/
+button.normal {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+/* Header Styling */
+#header {
+    position:fixed;
+    display: flex; /* Display as flexbox */
+    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; /* Space between logo and navbar */
+    padding: 10px;
+    background-color: darkolivegreen;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+   
+    top: auto;
+    left: auto;
+}
+    #header.scrolled {
+        background-color: beige;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+/* Logo Styling */
+.logo {
+    height: 400px; /* Set the size of the logo */
+}
+
+/* Navbar List Styling */
+#navbar {
+   
+   
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links inline */
+    gap: 60px; /* Add space between items */
+    margin: 50px;
+    padding: 0;
+}
+
+    /* Navbar Links Styling */
+    #navbar li a {
+        text-decoration: wavy;
+        color: #333;
+        font-size: 20px;
+        font-weight: Bold;
+        transition: 0.3s ease; /* for smoothness*/
+        position: relative; /*added in the parent class to show the line*/
+    }
+        /*over here active represent the active page*/
+        #navbar li a:hover, #navbar li a.active {
+            color: lightskyblue;
+        }
+            /*undeline effect and also used hover so when we pause on text it can have underline effect tb bhi*/
+            #navbar li a.active::after,
+            #navbar li a:hover::after {
+                content: "";
+                width: 30%;
+                height: 2px;
+                background-color: lightskyblue;
+                position: absolute;
+                bottom: -4px;
+                left: 20px;
+                left: 20px;
+            }
+        /* Icon Styling */
+        #navbar li a i {
+            font-size: 18px;
+        }
+
+
+/*HOME PAGE CODE*/
+
+#hero {
+    background-image: url("file:///C:/Users/hp/Desktop/image/new.jpg");
+    height: 80vh;
+    width: 96%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-color: beige;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+    #hero h1 {
+        padding-bottom: 15px;
+        color: darkolivegreen;
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        text-align: center;
+        /* minimum 1.5rem, scales with viewport width up to 3rem max */
+    }
+
+    #hero h2 {
+        color: brown;
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    #hero button {
+        background-image: url("file:///C:/Users/hp/Desktop/image/button.jpg");
+        background-color: transparent;
+        color: white;
+        border: 0;
+        padding: 14px 80px 14px 65px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 20px;
+    }
+/*doing this kyun k feature boxes vertical show ho rahay thay we want them horizontal*/
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /*Flex items will wrap onto multiple lines if needed. New lines are added below.*/
+}
+    /*yai box add krnay k liyay around the picture*/
+    #feature .febox {
+        width: 110px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 24px rgba(0, 0, 0, 0.03); /* the px is showed for x-axis and y-axis*/
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+    }
+        /*for the image/
+    #feature .febox img{
+        width: 100%;
+       
+
+    }
+    */
+
+        /*when you hover pon the box shadow goes away*/
+        #feature .febox:hover {
+            box-shadow: 10px 10px 54px rgba(70,60,221,0.01);
+        }
+        /*this is for the your problem box*/
+        #feature .febox h5 {
+            display: inline-block;
+            padding: 9px 8px 6px 8px;
+            line-height: 1;
+            border-radius: 4px;
+            color: #088178;
+            background-color: antiquewhite;
+        }
+
+#Services .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#Services {
+    text-align: center;
+}
+
+    #Services .pro {
+        width: 270px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer; /*jb hover kerain tou cursor change ho*/
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+        margin: 15px 0;
+        transition: 02s ease;
+    }
+
+        #Services .pro:hover {
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        #Services .pro img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        #Services .pro .des {
+            line-height: 1.2; /* or adjust to a tighter value like 1.2 */
+            gap: 0;
+            padding: 0;
+            text-align: start;
+            padding: 10px 0;
+        }
+
+            #Services .pro .des span {
+                color: #606063;
+                font-size: 18px;
+            }
+
+            #Services .pro .des h5 {
+                line-height: 0; /* or adjust to a tighter value like 1.2 */
+                gap: 0;
+                padding: 0;
+                color: #1a1a1a;
+                font-size: 15px;
+            }
+
+            #Services .pro .des h4 {
+                line-height: 0; /* or adjust to a tighter value like 1.2 */
+                gap: 0;
+                padding: 0;
+                font-size: 15px;
+                font-weight: 700;
+                color: black;
+            }
+
+
+            #Services .pro .des i {
+                line-height: 0; /* or adjust to a tighter value like 1.2 */
+                gap: 0;
+                padding: 0;
+                font-size: 12px;
+                color: rgba(243, 181,25);
+            }
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(file:///C:/Users/hp/Desktop/image/bk.jpg);
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+}
+
+    #banner h3 {
+        color: floralwhite;
+    }
+
+    #banner h2 {
+        color: floralwhite;
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+        #banner h2 span {
+            color: red;
+        }
+
+    #banner button:hover {
+        background: #088178;
+        color: white;
+    }
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+    #newsletter h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+
+    #newsletter p {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+    }
+
+        #newsletter p span {
+            color: orange;
+        }
+
+    #newsletter .form {
+        display: flex;
+        width: 40%;
+    }
+
+    #newsletter input {
+        height: 3.125rem;
+        padding: 0 1.25em;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #newsletter button {
+        background-color: darkcyan;
+        color: floralwhite;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    footer .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 17px;
+        margin: 0 0 8px 0;
+    }
+
+    footer a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    footer.follow {
+        margin-top: 20px;
+    }
+
+        footer .follow i {
+            color: darkgrey;
+            padding-right: 4px;
+            cursor: pointer;
+        }
+
+    footer .install .row img {
+        border: 2px solid green;
+        border-radius: 7px;
+    }
+
+    footer .install img {
+        margin: 10px 0 15px 0;
+        cursor: pointer;
+    }
+
+
+    footer .follow i:hover,
+    footer a:hover {
+        color: #088178;
+    }
+
+    footer .copyright {
+        font-size: 200px;
+        width: 200%;
+        text-align: center;
+    }
+
+        footer .copyright span {
+            color: red;
+        }
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+section.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+/* Form Heading */
+h2.text-center {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: darkolivegreen;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea */
+form input,
+form textarea {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+    /* Focus Effects */
+    form input:focus,
+    form textarea:focus {
+        border-color: black;
+        box-shadow: 0 0 5px rgba(13, 110, 253, 0.25);
+        outline: none;
+    }
+
+/* Submit Button */
+form button.btn-primary {
+    background-color: darkolivegreen;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+    form button.btn-primary:hover {
+        background-color: #0b5ed7;
+    }
+
+/* Responsive Form */
+@media (max-width: 576px) {
+    section.container {
+        padding: 25px 15px;
+    }
+
+    h2.text-center {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Slightly smaller padding for medium screens */
+    .section-p1 {
+        padding: 30px 40px;
+    }
+
+    .section-m1 {
+        margin: 30px 0;
+    }
+
+    #header {
+        padding: 10px 20px;
+        height: 120px;
+    }
+
+    #navbar {
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    #hero {
+        width: 100%;
+        padding: 0 40px;
+        background-size: 60% 100%;
+    }
+
+        #hero button {
+            padding: 12px 50px 12px 50px;
+            font-size: 18px;
+        }
+
+    #feature .febox {
+        width: 90px;
+        padding: 20px 10px;
+    }
+
+    #Services .pro-container {
+        justify-content: center;
+    }
+
+    #Services .pro {
+        width: 220px;
+        margin: 15px 10px;
+    }
+
+    #banner {
+        height: 30vh;
+        padding: 0 20px;
+    }
+
+        #banner h2 {
+            font-size: 26px;
+        }
+
+    #newsletter .form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tablet and smaller */
+    .section-p1 {
+        padding: 25px 20px;
+    }
+
+    .section-m1 {
+        margin: 25px 0;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px 0 0 0;
+    }
+
+        #navbar li a {
+            font-size: 16px;
+        }
+
+    #hero {
+        height: 70vh;
+        padding: 0 20px;
+        background-size: 80% 100%;
+        background-position: center top;
+        align-items: center;
+        text-align: center;
+    }
+
+        #hero h1, #hero h2 {
+            text-align: center;
+        }
+
+        #hero button {
+            padding: 12px 40px 12px 40px;
+            font-size: 16px;
+        }
+
+    #feature {
+        justify-content: center;
+    }
+
+        #feature .febox {
+            width: 80px;
+            padding: 15px 8px;
+            margin: 10px;
+        }
+
+    #Services .pro-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Services .pro {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    #banner {
+        height: 25vh;
+        padding: 0 10px;
+    }
+
+        #banner h2 {
+            font-size: 22px;
+        }
+
+    #newsletter {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+        #newsletter .form {
+            width: 100%;
+        }
+
+        #newsletter input {
+            font-size: 16px;
+        }
+}
+
+@media (max-width: 480px) {
+    /* Mobile phones */
+    .section-p1 {
+        padding: 20px 10px;
+    }
+
+    .section-m1 {
+        margin: 20px 0;
+    }
+
+    #header {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    #navbar {
+        gap: 10px;
+        margin: 5px 0;
+    }
+
+        #navbar li a {
+            font-size: 14px;
+        }
+
+    #hero {
+        height: 60vh;
+        background-size: cover;
+        background-position: center center;
+        padding: 0 15px;
+    }
+
+        #hero button {
+            padding: 10px 25px 10px 25px;
+            font-size: 14px;
+        }
+
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #feature .febox {
+            width: 100%;
+            max-width: 200px;
+            margin: 8px 0;
+        }
+
+    #Services .pro-container {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #Services .pro {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    #banner {
+        height: 20vh;
+        padding: 0 10px;
+    }
+
+        #banner h2 {
+            font-size: 18px;
+        }
+
+    #newsletter {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+        #newsletter h4, #newsletter p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #newsletter .form {
+            width: 100%;
+        }
+
+        #newsletter input {
+            font-size: 14px;
+        }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        footer .col {
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        footer h3, footer p, footer a {
+            font-size: 16px;
+        }
+}
+
+@media (max-width: 576px) {
+    section.container {
+        padding: 25px 15px;
+    }
+
+    h2.text-center {
+        font-size: 1.8rem;
+    }
+}
