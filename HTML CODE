@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Karsaz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+    <body>
+        <section id="header">
+            
+                <a href="#">
+                    <img src="file:///C:/Users/hp/Desktop/image/logo.png" class="logo" alt="Logo Image"></a>
+                    <div>
+                        <ul id="navbar">
+                            <!-- .html is used to create seperate visit pages not create yet later on will be used -->
+                            <li><a class="active" href="index.html">Home</a></li>
+
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="login.html">Signup/login</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href=""><i class="fa-solid fa-store"></i></a></li>
+                        </ul>
+                    </div>
+
+                </a>
+        </section>
+        <!--used this section for the backgound image-->
+
+        <section id="hero">
+            <h1>WELCOME TO KAARSAZ ∼ Home Services</h1>
+            <h2>Providing negotatiable deals of your own choice</h2>
+            <p>Save more with ratings and coupons up to 50%</p>
+            <button>Search Now</button>
+
+        </section>
+        <!--making this section for features-->
+        <section id="feature" class="section-p1">
+            <div class="febox">
+
+                <img src="file:///C:/Users/hp/Desktop/image/fea1.jpg" width="110" height="130">
+                <h5>Services</h5>
+            </div>
+
+            <div class="febox">
+
+                <img src="file:///C:/Users/hp/Desktop/image/fea3.jpg" width="110" height="130">
+                <h5>Booking</h5>
+            </div>
+
+            <div class="febox">
+
+                <img src="file:///C:/Users/hp/Desktop/image/fea2.jpg" width="110" height="130">
+                <h5>Track the rider</h5>
+            </div>
+
+            <div class="febox">
+
+                <img src="file:///C:/Users/hp/Desktop/image/fea4.jpg" width="110" height="130">
+                <h5>Special offers</h5>
+            </div>
+
+            <div class="febox">
+
+                <img src="file:///C:/Users/hp/Desktop/image/fea5.jpg" width="110" height="130">
+                <h5>Ask EM!</h5>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section id="Services" class="section-p1">
+            <h1>Featured Services</h1>
+            <p>Collection of the Services we provide</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="file:///C:/Users/hp/Desktop/image/Carservices.jpg" height="300" width="400" alt="Toyota" />
+                    <div class="des">
+                        <span>Toyota</span>
+                        <h5>Car Services</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Contact no: 01-135849309</h4>
+
+                    </div>
+
+                </div>
+                <div class="pro">
+                    <img src="file:///C:/Users/hp/Desktop/image/health.jpg" height="300" alt="Hospital" />
+                    <div class="des">
+                        <span>Hospital</span>
+                        <h5>Safari-Hospital</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Contact no: 051-1358498</h4>
+
+                    </div>
+
+                </div>
+                <div class="pro">
+                    <img src="file:///C:/Users/hp/Desktop/image/groccery.jpg" height="300" />
+                    <div class="des">
+                        <span> Groccery</span>
+                        <h5>Baqala Mart</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Contact no: 061-1358493</h4>
+
+                    </div>
+
+                </div>
+                <div class="pro">
+                    <img src="file:///C:/Users/hp/Desktop/image/cleaner.jpg" height="300" />
+
+                    <div class="des">
+                        <span>Helper</span>
+                        <h5>CleanServicespro</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Contact no: 051-849309</h4>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!--defualt margin settings-->
+        <section id="banner" class=".section-m1">
+            <h3>Contact us for inconvenience - KAARSAZ</h3>
+
+            <!--added span takay services for free ko highlight kr skayen-->
+
+            <h2>"In case of incorrect billing, we offer the affected <span>service for free</span> ."</h2>
+            <button class="normal">Explore more!</button>
+        </section>
+
+        <!--making 2 diff div tag takay seperate email bhi daal skay-->
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign up for Newsletter</h4>
+                <p>Get Email for the updates and <span>special offers.</span></p>
+            </div>
+            <form class="form" id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+                <button type="submit" class="normal">Sign up</button>
+            </form>
+        </section>
+
+        <script>
+            document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+                const email = document.getElementById("newsletterEmail").value.trim();
+
+                if (email === "") {
+                    alert("Please enter a valid email address.");
+                } else {
+                    alert("Thank you for subscribing with: " + email);
+                    this.reset(); // Clears the form after submission
+                }
+            });
+        </script>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img src="file:///C:/Users/hp/Desktop/image/C.jpg" width="150" height="80" />
+                <h3>Approach us directly</h3>
+                <p><strong>Address:</strong> Bahria University, E-8 Islamabad</p>
+                <p><strong>Contact:</strong> 051-5555045</p>
+                <p><strong>Working hours:</strong> 10:00 - 5:00, Mon - Fri</p>
+                <div class="follow">
+                    <h3>Follow us</h3>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>About</h3>
+                <a href="#">About us</a>
+                <a href="#">Become a Service person</a>
+                <a href="#">Delievery Information</a>
+                <a href="#">Terms & Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="col install">
+                <h3>Install App</h3>
+                <p>From App store or Google Play</p>
+                <div class="row">
+                    <img src="file:///C:/Users/hp/Desktop/image/app.jpg" height="30" width="100" />
+                    <img src="file:///C:/Users/hp/Desktop/image/g.jpg" height="30" width="100" />
+
+                </div>
+                <p>Secured payment gateways</p>
+                <img src="file:///C:/Users/hp/Desktop/image/pay.jpg" height="30" width="300" />
+
+            </div>
+            <div class="copyright">
+                <p><span>2025</span>, Muqadas-075 and Hiba-034  <span>Web PROJECT</span></p>
+
+            </div>
+        </footer>
+
+        <!-- Add similar navbar from index.html -->
+        <section class="container my-5">
+            <h2 class="text-center">Give us your Feedback</h2>
+            <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+                alert("Thank you! Your message has been sent.");
+            });
+        </script>
+
+
+    </body>
+</html>
